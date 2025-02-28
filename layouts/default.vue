@@ -16,11 +16,12 @@
             <li v-if="showAuthLinks">
               <NuxtLink to="/signup">Register</NuxtLink>
             </li>
-            <li v-if="!showAuthLinks">
-              <NuxtLink to="/items/allmoment">My Bucket</NuxtLink>
-            </li>
+           
             <li v-if="!showAuthLinks">
               <NuxtLink to="/">Logout</NuxtLink>
+            </li>
+            <li v-if="!showAuthLinks">
+              <NuxtLink to="/items/allmoment">My Bucket</NuxtLink>
             </li>
           </ul>
         </nav>
